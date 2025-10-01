@@ -4,7 +4,9 @@
 # Groq Model Comparison Lab
 
 This is a Streamlit prototype application that allows you to compare responses from two different large language models provided via the [Groq API](https://console.groq.com/).  
-It provides side-by-side comparisons of model outputs, response times, and performance metrics.
+It provides side-by-side comparisons of model outputs, response times, and performance metrics.  
+This app is a first draft of a simple prompt engineering workspace.
+A working demo of the app is available here on [Streamlit Cloud](https://groq-model-comparison.streamlit.app/)
 
 ---
 
@@ -17,10 +19,10 @@ It provides side-by-side comparisons of model outputs, response times, and perfo
   - `qwen/qwen3-32b`
   - `openai/gpt-oss-20b`
   - `openai/gpt-oss-120b`
-- Adjustable generation parameters:
+- Adjustable generation parameters (same value for both models):
   - Temperature
   - Response Length (Short, Medium, Long)
-- Advanced options:
+- Advanced options (same value for both models):
   - Override `max_tokens`
   - Top P
   - Frequency Penalty
@@ -95,7 +97,6 @@ Then open the displayed URL in your browser (usually `http://localhost:8501`).
 ├── groq_playground.py # Main Streamlit application
 ├── requirements.txt   # Python dependencies
 ├── README.md          # Project documentation
-└── .env.example       # Example environment file for API keys
 ```
 
 ---
